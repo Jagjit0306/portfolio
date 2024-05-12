@@ -73,9 +73,6 @@ body {
 #div2 {
     height: 100vh;
 }
-#div3 {
-    /* height: 100vh; */
-}
 
 .proj {
     backdrop-filter: blur(10px);
@@ -168,109 +165,25 @@ body {
 }
 
 .card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    /* perspective: 1000px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  /* gap: 5%; */
 }
 
 .card {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    border-radius: 20px;
-    animation: rotateCard 21s ease-in-out infinite;
-    background-color: white;
-    color: black;
+  margin: 2%;
+  height: 20vw;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .card img {
-    height: 100%;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10px;
 }
-
-@keyframes rotateCard {
-    /* Hold front */
-    0% {
-      transform: translateZ(1px);
-    }
-    /* Hold front */
-    14.2857% {
-      transform: translateZ(1px);
-    }
-    /* Move left */
-    16.6667% {
-      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
-    }
-    /* Hold left */
-    28.5714% {
-      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
-    }
-    /* Move right */
-    33.3333% {
-      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
-    }
-    /* Hold right */
-    45.2381% {
-      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
-    }
-    /* Move front */
-    47.619% {
-      transform: translateZ(1px);
-    }
-    /* Hold front */
-    61.9048% {
-      transform: translateZ(1px);
-    }
-    /* Move left */
-    64.2857% {
-      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
-    }
-    /* Hold left */
-    76.1905% {
-      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
-    }
-    /* Move right */
-    80.9524% {
-      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
-    }
-    /* Hold right */
-    92.8571% {
-      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
-    }
-    /* Move front */
-    95.2381% {
-      transform: translateZ(1px);
-    }
-    /* Hold front */
-    100% {
-      transform: translateZ(1px);
-    }
-  }
-  
-  .card:nth-child(1) {
-    animation-delay: -18s;
-  }
-  .card:nth-child(2) {
-    animation-delay: -15s;
-  }
-  .card:nth-child(3) {
-    animation-delay: -12s;
-  }
-  .card:nth-child(4) {
-    animation-delay: -9s;
-  }
-  .card:nth-child(5) {
-    animation-delay: -6s;
-  }
-  .card:nth-child(6) {
-    animation-delay: -3s;
-  }
-  .card:nth-child(7) {
-    animation-delay: 0;
-  }
-  .card:nth-child(8) {
-    animation-delay: 3s;
-  }
