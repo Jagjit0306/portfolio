@@ -1,0 +1,276 @@
+:root {
+    --bar-color-tr: rgba(72, 72, 72, 0.695);
+    --bar-color : rgb(0, 0, 0);
+}
+
+#mainDiv {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    border: rgba(255, 0, 0, 0) 1px solid;
+    background-color: rgba(0, 0, 0, 0.627);
+    backdrop-filter: blur(50px);
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./public/bg.png');
+    background-size: cover;
+    color: white;
+}
+
+.headings {
+    background-clip: text;
+    color: transparent; 
+    background-image: url(./public/grad.jpg);
+    background-size: cover;
+}
+@keyframes bar-el-color {
+    50%{
+        color: aquamarine;
+    }
+    100%{
+        color: rgb(210, 210, 151);
+    }
+}
+.bar-el:hover {
+    animation-name: bar-el-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.icons {
+    width: 5vw;
+    height: 5vw;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.599);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icons img {
+    width: 5vw;
+    height: 5vw;
+}
+.iconSet {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    gap: 5%;
+}
+
+#div1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+#div2 {
+    height: 100vh;
+}
+#div3 {
+    /* height: 100vh; */
+}
+
+.proj {
+    backdrop-filter: blur(10px);
+    padding: 2%;
+    border-radius: 10px;
+    width: 80%;
+}
+#projs {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.proj a{
+    color: white;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.243);
+}
+.proj-heading {
+    color:rgb(195, 255, 243)
+}
+
+#pfp {
+    border-radius: 100%;
+    height: 20vh;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: var(--bar-color-tr) 15px solid;
+    backdrop-filter: blur(10px);
+}
+@keyframes pfp-in {
+    0%{
+        height: 20vh;
+    }
+    100%{
+        height: 60vh;
+    }
+}
+.pfp-big {
+    /* height: 60vh !important; */
+    animation-name: pfp-in; 
+    animation-duration: 1s;
+    animation-timing-function:  ease-in-out; 
+    /* animation-fill-mode: forwards; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.pfp-big-pers{
+    height: 60vh !important;
+}
+.pfp-small {
+    animation-name: pfp-in; 
+    animation-duration: 1s;
+    animation-timing-function:  ease-in-out; 
+    /* animation-fill-mode: forwards; */
+    animation-direction: reverse;
+}
+
+
+#bar {
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    /* background-color: var(--bar-color); */
+    background-image: linear-gradient(var(--bar-color), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 20vh;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#bar-els {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bar-el {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* perspective: 1000px; */
+}
+
+.card {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    animation: rotateCard 21s ease-in-out infinite;
+    background-color: white;
+    color: black;
+}
+
+.card img {
+    height: 100%;
+}
+
+@keyframes rotateCard {
+    /* Hold front */
+    0% {
+      transform: translateZ(1px);
+    }
+    /* Hold front */
+    14.2857% {
+      transform: translateZ(1px);
+    }
+    /* Move left */
+    16.6667% {
+      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
+    }
+    /* Hold left */
+    28.5714% {
+      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
+    }
+    /* Move right */
+    33.3333% {
+      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
+    }
+    /* Hold right */
+    45.2381% {
+      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
+    }
+    /* Move front */
+    47.619% {
+      transform: translateZ(1px);
+    }
+    /* Hold front */
+    61.9048% {
+      transform: translateZ(1px);
+    }
+    /* Move left */
+    64.2857% {
+      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
+    }
+    /* Hold left */
+    76.1905% {
+      transform: rotate(-4deg) scale(0.9) translate(-50%, -5%);
+    }
+    /* Move right */
+    80.9524% {
+      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
+    }
+    /* Hold right */
+    92.8571% {
+      transform: rotate(4deg) scale(0.9) translate(50%, -5%);
+    }
+    /* Move front */
+    95.2381% {
+      transform: translateZ(1px);
+    }
+    /* Hold front */
+    100% {
+      transform: translateZ(1px);
+    }
+  }
+  
+  .card:nth-child(1) {
+    animation-delay: -18s;
+  }
+  .card:nth-child(2) {
+    animation-delay: -15s;
+  }
+  .card:nth-child(3) {
+    animation-delay: -12s;
+  }
+  .card:nth-child(4) {
+    animation-delay: -9s;
+  }
+  .card:nth-child(5) {
+    animation-delay: -6s;
+  }
+  .card:nth-child(6) {
+    animation-delay: -3s;
+  }
+  .card:nth-child(7) {
+    animation-delay: 0;
+  }
+  .card:nth-child(8) {
+    animation-delay: 3s;
+  }

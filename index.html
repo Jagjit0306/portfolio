@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body onload="main()">
+    <div id="bar">
+        <img id="pfp" src="./public/pfp.jpg" alt="jagjit">
+        <div id="bar-els">
+            <div class="bar-el">ME</div>
+            <div class="bar-el">SKILLS</div>
+            <div class="bar-el">PROJECTS</div>
+        </div>
+    </div>
+    <div id="mainDiv">
+        <div id="div1">
+            <div id="div1-1" style="height: 100%; width: 40%;">
+
+            </div>
+            <div id="div1-2" style="height: 80%; width: 50%;">
+                <h1 id="div1-name" class="headings">Jagjit Singh</h1>
+                <div class="iconSet">
+                    <div class="icons" onclick="window.open('https://github.com/Jagjit0306', '_blank')"><img src="./public/github.png" alt="github"></div>
+                    <div class="icons" onclick="window.open('https://twitter.com/Jagjit0306', '_blank')"><img src="./public/twitter.png" alt="twitter"></div>
+                    <div class="icons" onclick="window.open('https://www.linkedin.com/in/jagjit-singh-b2359b2b1/', '_blank')"><img src="./public/linkd.png" alt="linkedin"></div>
+                    <div class="icons" onclick="window.open('mailto:jagjits.ec.23@nitj.ac.in', '_blank')"><img src="./public/mail.png" alt="linkedin"></div>
+                </div>
+                <h3 id="div1-desc">Btech (ECE) Student at NIT Jalandhar</h3>
+                <br>
+                <h2 id="div1-skills">Web Developer</h2>
+            </div>
+        </div>
+        <div id="div2">
+            <h1 id="div2-skills" class="headings">S K I L L S</h1>
+            <div id='div2-inner' style="height: 60%;">
+                <div class="card-container">
+                    <div class="card"><img src="./public/html.png" alt="HTML"></div>
+                    <div class="card"><img src="./public/js.png" alt="JS"></div>
+                    <div class="card"><img src="./public/js.png" alt="CSS"></div>
+                    <div class="card">NODE.JS</div>
+                    <div class="card">MONGODB</div>
+                    <div class="card"><img src="./public/c.png" alt="C"></div>
+                    <div class="card"><img src="./public/c.png" alt="C++"></div>
+                    <div class="card"><img src="./public/python.png" alt="PYTHON"></div>
+                </div>
+            </div>
+        </div>
+        <div id="div3">
+            <h1 id="div3-proj" class="headings">P R O J E C T S</h1>
+            <div id="projs">
+                <div class="proj">
+                    <h2 class="proj-heading">➤ <img src="./public/favicon.svg" alt="getKarma" style="width: 3vw;"> getKarma</h2>
+                    <p>• College - level pick and drop facility based on a credit system. <br>
+                        • Users can request various items from all over the campus (by spending Karma credits) and willing students can
+                        accept the request and follow through with it to earn Karma credits. <br>
+                        • This platform provides a barter-system like experience with no payment involved</p>
+                    <a href="https://getkarma.onrender.com">try getKarma now !!</a>
+                </div>
+                <div class="proj">
+                    <h2 class="proj-heading">➤ scorekeep</h2>
+                    <p>• Live scoreboard website for college tournaments. <br>
+                        • A project utilizing both Frontend and Backend along with DBMS and WebSockets to prepare me for future larger
+                        projects.</p>
+                    <a href="https://scorekeep.onrender.com">try scorekeep now !!</a>
+                </div>
+                <div class="proj">
+                    <h2 class="proj-heading">➤ Snake Game Clone</h2>
+                    <p> • Coded in c language. <br>
+                        • A clone of the Snake Game from the mobile phones from the early 2000s. <br>
+                        • The game runs purely in the terminal while still offering colourful UI and sound effects. <br>
+                        • It also has the option to change settings and alter the game to the user’s liking.A scoreboard is also included in the
+                        game.</p>
+                </div>
+                <div class="proj">
+                    <h2 class="proj-heading">more on the way...</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
